@@ -1,2 +1,6 @@
-# go-zahhak
-Zahhak, a Go coding sample in form of a console game.
+# Zahhak2, a Golang multiplayer console game.
+
+## License
+Copyright (c) 2016 Aryo Pehlewan aryopehlewan@hotmail.com 
+Licensed under the GPL license.
+
