@@ -27,6 +27,7 @@ Zahhak2 by Aryo Pehlewan aryopehlewan@hotmail.com Copyright 2016 License GPLv3
   d88P      .d888888 888  888 888  888 .d888888 888888K  d88P"      
  d88P       888  888 888  888 888  888 888  888 888 "88b 888"       
 d8888888888 "Y888888 888  888 888  888 "Y888888 888  888 888888888  
-
-Type 'zahak2 help' for options
 `
+
+//Type 'zahak2 help' for options
+//`

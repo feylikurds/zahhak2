@@ -149,11 +149,12 @@ func (c *Canvas) overlay() {
 	s = c.entryText(t)
 	c.print(col+38, row, s, z.BoldColorYellow)
 
-	t = "Type 'zahak2 help' for options"
-	col = c.worldWidth + c.menuWidth - len(t)
-	row = c.screenHeight - 2
-	c.print(col, row, t, z.ColorWhite)
-
+	/*
+		t = "Type 'zahak2 help' for options"
+		col = c.worldWidth + c.menuWidth - len(t)
+		row = c.screenHeight - 2
+		c.print(col, row, t, z.ColorWhite)
+	*/
 	col = c.worldWidth + 2
 	row = c.worldHeight + 1
 

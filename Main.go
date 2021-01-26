@@ -28,7 +28,6 @@ import (
 	ac "github.com/shiena/ansicolor"
 
 	z "./common"
-	zm "./menu"
 )
 
 var game *Game
@@ -64,24 +63,24 @@ func main() {
 
 	quit = false
 
-	menu := zm.NewMenu()
-	menu.Options()
+	//menu := zm.NewMenu()
+	//menu.Options()
 
 	config := z.NewConfig()
-	config.Multiplayer = menu.Multiplayer
-	config.Server = menu.Server
-	config.Host = menu.Host
-	config.Port = menu.Port
-	config.Name = menu.Name
+	//config.Multiplayer = menu.Multiplayer
+	//config.Server = menu.Server
+	//config.Host = menu.Host
+	//config.Port = menu.Port
+	//config.Name = menu.Name
 
-	if !menu.Quit {
-		game = NewGame(config)
-		game.Start()
-		game.Play()
+	//if !menu.Quit {
+	game = NewGame(config)
+	game.Start()
+	game.Play()
 
-		go input()
-		play()
-	}
+	go input()
+	play()
+	//}
 
 	tb.Clear(tb.ColorDefault, tb.ColorDefault)
 	tb.Close()
