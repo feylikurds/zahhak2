@@ -1,4 +1,4 @@
-# Zahhak2, a Golang multiplayer console game.
+# Zahhak2, a Golang console game.
 
 ## License
 Copyright (c) 2016 Aryo Pehlewan aryopehlewan@hotmail.com 
