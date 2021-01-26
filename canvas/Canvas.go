@@ -114,7 +114,7 @@ func (c *Canvas) stats(numHealths, numStrengths, numTreasures, totalTreasures in
 }
 
 func (c *Canvas) overlay() {
-	t := "Zahhak2 by Aryo Pehlewan feylikurds@gmail.com Copyright 2016 License GPLv3"
+	t := "Zahhak2 by Aryo Pehlewan aryopehlewan@hotmail.com Copyright 2016 License GPLv3"
 	s := c.entryTextLen(t, len(t))
 	c.print(0, 0, s, z.BoldColorWhite)
 
