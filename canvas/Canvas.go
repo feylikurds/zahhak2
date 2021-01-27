@@ -1,6 +1,6 @@
 /*
-Zahhak2, a Golang multiplayer console game.
-Copyright (C) 2016 Aryo Pehlewan aryopehlewan@hotmail.com
+Zahhak2, a Golang console game.
+Copyright (C) 2021 Aryo Pehlewan aryopehlewan@hotmail.com
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -114,7 +114,7 @@ func (c *Canvas) stats(numHealths, numStrengths, numTreasures, totalTreasures in
 }
 
 func (c *Canvas) overlay() {
-	t := "Zahhak2 by Aryo Pehlewan aryopehlewan@hotmail.com Copyright 2016 License GPLv3"
+	t := "Zahhak2 by Aryo Pehlewan aryopehlewan@hotmail.com Copyright 2021 License GPLv3"
 	s := c.entryTextLen(t, len(t))
 	c.print(0, 0, s, z.BoldColorWhite)
 
