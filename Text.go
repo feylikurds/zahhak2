@@ -17,7 +17,7 @@ package main
 
 const GOODBYE = `
 
-Zahhak2 by Aryo Pehlewan aryopehlewan@hotmail.com Copyright 2021 License GPLv3
+By Aryo Pehlewan aryopehlewan@hotmail.com Copyright 2021 License GPLv3
 
 8888888888P          888      888               888       .d8888b.  
       d88P           888      888               888      d88P  Y88b 
