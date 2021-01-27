@@ -90,11 +90,11 @@ func (s *Sound) playback(buf []int16) {
 	wavehdr.lpData = C.LPSTR(unsafe.Pointer(&buf[0]))
 	wavehdr.dwBufferLength = C.DWORD(len(buf) * 2)
 
-	C.waveOutPrepareHeader(s.hwaveout, unsafe.Pointer(wavehdr), C.UINT(C.wavehdrsize))
+	C.waveOutPrepareHeader(s.hwaveout, wavehdr, C.UINT(C.wavehdrsize))
 
-	C.waveOutWrite(s.hwaveout, unsafe.Pointer(wavehdr), C.UINT(C.wavehdrsize))
+	C.waveOutWrite(s.hwaveout, wavehdr, C.UINT(C.wavehdrsize))
 
-	C.waveOutUnprepareHeader(s.hwaveout, unsafe.Pointer(wavehdr), C.UINT(C.wavehdrsize))
+	C.waveOutUnprepareHeader(s.hwaveout, wavehdr, C.UINT(C.wavehdrsize))
 
 	s.wavehdr = wavehdr
 }
@@ -108,7 +108,7 @@ func (s *Sound) flush() {
 		}
 
 		wdrsize := C.UINT(unsafe.Sizeof(wavehdr))
-		C.waveOutUnprepareHeader(s.hwaveout, unsafe.Pointer(s.wavehdr), wdrsize)
+		C.waveOutUnprepareHeader(s.hwaveout, s.wavehdr, wdrsize)
 		C.free(unsafe.Pointer(s.wavehdr))
 	}
 }

@@ -1,2 +1,0 @@
-GOROOT=/usr/lib/go-1.6 GOARCH=386 GOOS=windows CGO_ENABLED=1 GOPATH=$HOME/Projects/Go CXX=i686-w64-mingw32-g++ CC=i686-w64-mingw32-gcc go build
-
