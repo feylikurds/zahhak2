@@ -9,9 +9,6 @@ The Windows binary is ***experimental and not tested***, it can be downloaded [h
 ## Purpose
 To give others a basis of and encouragement of game-programming in Go.
 
-## Miscellaneous
-My website is http://www.quoxium.com
-
 ## License
 Copyright (c) 2021 Aryo Pehlewan aryopehlewan@hotmail.com 
 Licensed under the GPL license.
